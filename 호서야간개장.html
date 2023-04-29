@@ -8,23 +8,27 @@
             height: 25px;
             padding-left: 10px;
                 margin: 20px;}
-            #p1 {border-bottom: dotted 2px gray;
-            padding-bottom: 15px;
-            margin: 30px 40px 5px 30px;
-            width: 500px;}
-            #p2 {border-bottom: dotted 2px gray;
-            padding-bottom: 15px;
-            margin: 15px 40px 5px 30px;
-            width: 500px;}
+
+            ul {border: solid 1px black;
+            width: 500px;
+            padding: 10px;
+            margin: 10px 10px 10px 20px;}
+
+            li {list-style-type: none;
+                border-bottom: dotted 1px gray;
+                padding-bottom: 10px;
+                margin: 15px;}
         </style>
     </head>
     <body>
         <h3>주말 야간 개장 안내</h3>
-        <p id="p1">- <b>기간</b> : 4.28~8.20 18:00~22:00 (입장마감 21시)</p>
-        <p id="p2">- <b>대상</b> : 동물원, 식물원</p>
-        <p id="p2">- <b>프로그램</b> : 야간동물원 관람, 동물생태 설명회, 식물전시</p>
-        <form action="방문접수완료.html"><p id="p2">- <b>방문자 신분</b> : <input type="radio" name="info">호서대 재학생
+        <ul>
+        <li>- <b>기간</b> : 4.28~8.20 18:00~22:00 (입장마감 21시)</li>
+        <li>- <b>대상</b> : 동물원, 식물원</li>
+        <li>- <b>프로그램</b> : 야간동물원 관람, 동물생태 설명회, 식물전시</li>
+        <form action="방문접수완료.html"><li>- <b>방문자 신분</b> : <input type="radio" name="info">호서대 재학생
             <input type="radio" name="info">일반인 <input type="submit" value="방문신청">
-            </form></p>
+            </form></li>
+        </ul>
     </body>
 </html>
