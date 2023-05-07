@@ -5,12 +5,19 @@
         <style>
             h1 {color: blue;}
             #p1 {color: red;}
+    
         </style>
+        <script>
+             function subblue() { document.getElementById("sub").style.color = 'blue';}
+            function subred() { document.getElementById("sub").style.color = 'red';}
+        </script>
     </head>
     <body>
-        <h1>문의사항이 잘 접수되었습니다.</h1>
+        <h1 id="sub">문의사항이 잘 접수되었습니다.</h1>
         <b><p id="p1">고맙습니다.</p></b><br>
         <a href="호서국제기타페스티벌.html">[되돌아가기]</a>
         <a href="index.html">[첫 화면으로]</a>
+        <button onclick="subred()" type="button">빨간색으로</button>
+        <button onclick="subblue()" type="button">파란색으로</button>
     </body>
 </html>
