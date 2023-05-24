@@ -57,7 +57,7 @@ nav {	text-align: center;
 		width: 930px;
 		margin-top: 2px;
         font-family: 'Noto Serif KR', serif;
-		background-color: aliceblue;
+		background-color: rgb(226, 226, 226);
 		margin:0 auto;
 	border: solid 1px blue;}
 
@@ -97,52 +97,46 @@ color: white;}
 li {display: inline-block;
 list-style-type: none;}
 
+/*section*/
+
 section {text-align: center;
-		height: 380px;
-		margin-top: 0px;
+		height: 600px;
+		padding-top: 15px;
 		background-color: white;
-		margin:0 auto;}
-#sec1 {font-family: 'Noto Serif KR', serif;
-		margin:20px auto;
-		border-top: solid 4px gray;
-		text-align: center;
-		width: 300px;
+		margin:0 auto;
+		font-family: 'Noto Serif KR', serif;}
+
+#sec {
+		margin:0px auto;
+		padding-bottom: 15px;
+		border-bottom: solid 4px gray;
+		text-align: left;
+		width: 630px;
 	 	padding-top: 20px;}
 
+#sec1 {width: 300px;
+		height: 30px;
+		margin-top: 20px;
+		border-top: solid 4px gray;
+		padding-top: 10px;}
+
+th, tr, td, table {border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	border-collapse: collapse;
+	padding: 5px;
+	margin: 20px auto;}
+
+td {width: 500px;
+	height: 15px;
+	font-size: small;
+	text-align: left;}
+th {background-color: rgb(204, 204, 204);
+	color: black;
+	text-align: left;
+	font-weight: normal;}
 
 
-#sec3 {font-family: 'Noto Serif KR', serif;
-    text-align: center;
-width: 300px;
-margin-left: 420px;
-margin-top: 20px;
-margin:20px auto;}
 
-#sec4 {font-family: 'Noto Serif KR', serif;
-    text-align: center;
-width: 300px;
-margin-left: 435px;
-margin:10px auto;}
-.sec4 {padding-left: 13px;}
-
-#sec5 {font-family: 'Noto Serif KR', serif;
-    text-align: center;
-width: 300px;
-height: 30px;
-margin-left: 470px;
-margin:40px auto;
-border: solid 2px rgb(0, 153, 255);
-border-radius: 7px;
-padding-top: 10px;
-color: white;
-background-color: rgb(0, 153, 255);}
-
-#sec6 {font-family: 'Noto Serif KR', serif;
-    text-align: center;
-width: 300px;
-margin-left: 420px;
-margin:20px auto;}
-#sky {color: rgb(0, 153, 255);}
 .clear	{clear: both;}
 
 footer {padding-top: 45px;
@@ -173,8 +167,8 @@ margin:0px auto;}
 <header>
 	<a href="damsook.html"><img id="logo" src="img/logo.png" width="100"></a>
 
-<h2 id="name">
-	회원가입
+<h2>
+	담숙하다
 </h2>
 <div id="top">
 <ul id="ultop">
@@ -200,37 +194,55 @@ margin:0px auto;}
 </div>
 </header>
 <nav>
-	<ul>
-		<a href="damsook.html"><li class="nav">HOME</li></a>
-		<li class="nav">SNS</li>
-		<li class="nav">디저트</li>
-		<li class="nav">커피 / 음료</li>
-		<li class="nav">회사소개</li>
-		<li class="nav">문의하기</li>
+	<ul id="nav">
+		<a href="damsook.html"><li id="home">HOME</li></a>
+		<a href="damsook_sns.html"><li id="SNS">SNS</li></a>
+		<li id="디저트">디저트</li>
+		<li id="커피음료">커피/음료</li>
+		<li id="회사소개">회사소개</li>
+		<a href="damsook_문의하기.html"><li id="문의하기">문의하기</li></a>
 	</ul>
 </nav>
 <section>
-	<ul>
-		<li id="sec1">회원가입이 완료되었습니다.</li>
-	</ul>
-		<div class='clear'></div>
-<div class='clear'></div>
-<a href="damsook_로그인.html">
-	<div id="sec5">
-  로그인
-</div>
-</a>
-<div id="sec3">
-    - 소셜 계정으로 간편 로그인 -
-</div>
-<div id="sec4">
-  <ul>
-    <li class="sec4"><img src="img/naver.png" width="50"></li>
-    <li class="sec4"><img src="img/google.png" width="50"></li>
-    <li class="sec4"><img src="img/facebook.png" width="50"></li>
-    <li class="sec4"><img src="img/kakao.png" width="50"></li>
-  </ul>
-</div>
+	<div id="sec">마이페이지</div>
+	<table>
+		<tr>
+		<th>이름</th><td>정에스더</td>
+		</tr>
+		<tr>
+		<th>아이디</th><td>damsook123</td>
+		</tr>
+		<tr>
+		<th>비밀번호</th><td>...</td>
+		</tr>
+		<tr>
+			<th>성별</th><td>...</td>
+		</tr>
+		<tr>
+			<th>생년월일</th><td>...</td>
+		</tr>
+		<tr>
+			<th>이메일 주소</th><td>...</td>
+		</tr>
+		<tr>
+			<th>주소</th><td>...</td>
+		</tr>
+		<tr>
+			<th>기본배송지</th><td>...</td>
+		</tr>
+		<tr>
+			<th>연락처</th><td>...</td>
+		</tr>
+		<tr>
+			<th>이메일 수신여부</th><td>...</td>
+		</tr>
+		<tr>
+			<th>SNS 수신여부</th><td>...</td>
+		</tr>
+
+			</table>
+
+
 
 	</div>
 </section>
