@@ -149,10 +149,14 @@ width: 600px;}
 	border-radius: 5px
 	font-family: 'Noto Serif KR', serif;}
 
-#form_button{height: 50px;
-	margin: 20px auto;}
 
 #form_button1 {float: left;
+				width: 100px;
+				height: 30px;
+				border-radius: 5px;
+				font-family: 'Noto Serif KR', serif;
+			border: solid 1px gray;}
+#form_button3 {float: right;
 				width: 100px;
 				height: 30px;
 				border-radius: 5px;
@@ -165,7 +169,8 @@ width: 600px;}
 				border: solid 1px gray;	
 				border-radius: 5px;
 				color: white;
-				font-family: 'Noto Serif KR', serif;}
+				font-family: 'Noto Serif KR', serif;
+				margin-left: 5px;}
 
 .clear	{clear: both;}
 
@@ -214,7 +219,7 @@ margin:0px auto;}
 	<a href="damsook_마이페이지.html">
 	<li class="top"><img src="img/마이페이지.png" width="30">&nbsp;&nbsp;</li>
 	</a>
-	<a href="damsook_문의하기.html">
+	<a href="damsook_문의내역.html">
 	<li class="top"><img src="img/QnA.png" width="30">&nbsp;&nbsp;</li>
 	</a>
 </ul>
@@ -225,12 +230,12 @@ margin:0px auto;}
 </header>
 <nav>
 	<ul id="nav">
+		<li id="회사소개">회사소개</li>
 		<a href="damsook.html"><li id="home">HOME</li></a>
 		<a href="damsook_sns.html"><li id="SNS">SNS</li></a>
 		<li id="디저트">디저트</li>
 		<li id="커피음료">커피/음료</li>
-		<li id="회사소개">회사소개</li>
-		<a href="damsook_문의하기.html"><li id="문의하기">문의하기</li></a>
+		<a href="damsook_문의내역.html"><li id="문의하기">문의하기</li></a>
 	</ul>
 </nav>
 <section>
@@ -250,11 +255,11 @@ margin:0px auto;}
 				</table>
 				</div>
 		</div>
-	<form action="damsook_리뷰완료.html">
+
+		<form action="damsook_리뷰완료.html">
 		<input id="form_text" type="text" placeholder=" 최소 15자 이상 입력">
-		<div id="form button">
-		<button id="form_button1" type="reset">작성 취소</button>
 		<button id="form_button2" type="submit">작성 완료</button>
+		<button id="form_button3" type="reset">작성 초기화</button>
 	</form>
 
 	

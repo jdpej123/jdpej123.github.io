@@ -68,8 +68,7 @@ nav {	text-align: center;
 		height: 35px;
 	text-align: center;
 	margin: 0px auto;
-	padding-top: 15px;
-	color: black;}
+	padding-top: 15px;}
 
 #SNS, #디저트, #커피음료, #회사소개
 	{border-top: solid 1px gray;
@@ -79,15 +78,15 @@ nav {	text-align: center;
 		height: 35px;
 	text-align: center;
 	margin: 0px auto;
-	padding-top: 15px;
-	color: black;}
+	padding-top: 15px;}
 #문의하기
 {border: solid 1px gray;
 		width: 152px;
 		height: 35px;
 	text-align: center;
 	margin: 0px auto;
-	padding-top: 15px;}
+	padding-top: 15px;
+	background-color: rgb(182, 182, 182);}
 
 .nav {margin-left: 90px;
 	margin-top : 15px;
@@ -97,46 +96,49 @@ nav {	text-align: center;
 li {display: inline-block;
 list-style-type: none;}
 
-
- /*section*/
-
+/*section*/
 section {text-align: center;
 		height: 380px;
 		margin-top: 0px;
 		background-color: white;
 		margin:0 auto;
 		font-family: 'Noto Serif KR', serif;}
-#sec {
-		margin:0px auto;
+#section {width: 600px;
+	margin:0 auto;}
+#sec {margin:0px auto;
 		padding-bottom: 15px;
 		border-bottom: solid 4px gray;
 		text-align: left;
 		width: 630px;
 	 	padding-top: 20px;}
 
-#sec1 {text-align: center;
-		width: 630px;
-	 border: solid 0px blue;
-	 margin:0 auto;
-	 border-bottom: solid 4px gray;}
-
-.num {margin: 10px 45px 10px 45px;
-		border: solid 0px blue;
-		width: 20px;}
-.text {margin: 10px 15px 10px 15px;
-	border: solid 0px blue;
-	width: 80px;}
-
-th, tr, td, table {border-top: solid 1px black;
+th, tr, td, table {border-top:solid 1px black;
+	border-bottom:solid 1px black;
 	border-collapse: collapse;
 	padding: 5px;
 	margin: 20px auto;}
 
-td {width: 80px;
+td {width: 70px;
 	height: 20px;
 	font-size: small;}
-th {background-color: rgb(168, 168, 168);
-	color: white;}
+th {background-color: rgb(206, 206, 206);
+	color: white;
+	font-size: medium;
+	font-weight: bold;}
+
+#sec_title {width: 300px;}
+#button {width: 100px;
+		height: 30px;
+		padding-top: 5px;
+		border: solid 1px gray;
+		border-radius: 5px;
+		background-color: rgb(0, 153, 255);
+		color: white;
+		margin:0 auto;
+	 	float: right;
+		font-size: small;}
+
+
 .clear	{clear: both;}
 
 footer {padding-top: 45px;
@@ -204,43 +206,24 @@ margin:0px auto;}
 	</ul>
 </nav>
 <section>
-		<div id="sec">주문 / 배송</div>
-		<div id="sec1">
-			<div id="sec_num">
-				<ul>
-					<li class="num">1</li>
-					<li class="num">0</li>
-					<li class="num">0</li>
-					<li class="num">0</li>
-					<li class="num">1</li>
-				</ul>
-			</div>
-			<div id="sec_text">
-				<li class="text">전체</li>
-				<li class="text">입금/결제</li>
-				<li class="text">배송중</li>
-				<li class="text">배송완료</li>
-				<li class="text">구매확정</li>
-			</div>
-		</div>
-		<table>
-			<th>주문일</th><th>주문번호</th><th>주문금액</th><th>결제상태</th><th>배송상태</th><th>리뷰작성</th><th>적립금</th>
-				<tr>
-					<td>2023/5/25</td><td>23052510</td><td>23,000원</td><td>결제완료</td><td>배송완료</td><td><a href="damsook_리뷰.html">리뷰작성가능</a></td><td>230원</td>
-				</tr>
-				<tr>
-					<td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td>
-				</tr>
-				<tr>
-					<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-				</tr>
-				<tr>
-					<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-				</tr>
-				</table>
-
-
-	
+	<div id="section">
+	<div id="sec">문의내역</div>
+	<table>
+		<th>번호</th><th id="sec_title">제목</th><th>작성자</th><th>답변상태</th><th>작성일</th>
+			<tr>
+				<td>3</td><td>...</td><td>...</td><td>답변완료</td><td>...</td>
+			</tr>
+			<tr>
+				<td>2</td><td>...</td><td>...</td><td>답변완료</td><td>...</td>
+			</tr>
+			<tr>
+				<td>1</td><td>...</td><td>...</td><td>답변완료</td><td>...</td>
+			</tr>
+			</table>
+<a href="damsook_문의글.html"><div id="button">
+	문의하기
+</div></a>
+	</div>
 </section>
 	</div>
 <div class='clear'></div>

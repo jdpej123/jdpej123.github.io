@@ -87,7 +87,8 @@ nav {	text-align: center;
 		height: 35px;
 	text-align: center;
 	margin: 0px auto;
-	padding-top: 15px;}
+	padding-top: 15px;
+	background-color: rgb(182, 182, 182);}
 
 .nav {margin-left: 90px;
 	margin-top : 15px;
@@ -101,44 +102,78 @@ list-style-type: none;}
  /*section*/
 
 section {text-align: center;
-		height: 380px;
+		height: 420px;
 		margin-top: 0px;
 		background-color: white;
 		margin:0 auto;
 		font-family: 'Noto Serif KR', serif;}
 #sec {
 		margin:0px auto;
-		padding-bottom: 15px;
+		padding-bottom: 10px;
 		border-bottom: solid 4px gray;
 		text-align: left;
 		width: 630px;
 	 	padding-top: 20px;}
 
-#sec1 {text-align: center;
+#sec1 {height: 40px;
 		width: 630px;
 	 border: solid 0px blue;
 	 margin:0 auto;
 	 border-bottom: solid 4px gray;}
 
-.num {margin: 10px 45px 10px 45px;
-		border: solid 0px blue;
-		width: 20px;}
-.text {margin: 10px 15px 10px 15px;
-	border: solid 0px blue;
-	width: 80px;}
+#sec_title {width: 50px;
+			float: left;
+			margin-left: 10px;
+			padding: 5px;}
+#text1 {width: 545px;
+height: 25px;
+margin: 5px;}
+#text2 {width: 600px;
+		height: 100px;
+		margin-top: 30px;}
 
-th, tr, td, table {border-top: solid 1px black;
-	border-collapse: collapse;
-	padding: 5px;
-	margin: 20px auto;}
+#sec2 {width: 630px;
+		height: 200px;
+	margin: 0 auto;
+	border: solid 1px blue;
+}
+form {margin: 0 auto;
+	text-align: center;
+width: 600px;}
 
-td {width: 80px;
-	height: 20px;
-	font-size: small;}
-th {background-color: rgb(168, 168, 168);
-	color: white;}
+#form_text {width: 600px;
+		height: 150px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	border-radius: 5px
+	font-family: 'Noto Serif KR', serif;}
+
+
+#form_button1 {float: left;
+				width: 100px;
+				height: 30px;
+				border-radius: 5px;
+				font-family: 'Noto Serif KR', serif;
+			border: solid 1px gray;}
+#form_button3 {float: right;
+				width: 100px;
+				height: 30px;
+				border-radius: 5px;
+				font-family: 'Noto Serif KR', serif;
+			border: solid 1px gray;}
+#form_button2 {float: right;
+				width: 100px;
+				height: 30px;
+				background-color: rgb(0, 153, 255);
+				border: solid 1px gray;	
+				border-radius: 5px;
+				color: white;
+				font-family: 'Noto Serif KR', serif;
+				margin-left: 5px;}
+
 .clear	{clear: both;}
 
+/*footer*/
 footer {padding-top: 45px;
 	height: 160px;
 		margin-top: 0px;
@@ -195,51 +230,29 @@ margin:0px auto;}
 </header>
 <nav>
 	<ul id="nav">
+		<li id="회사소개">회사소개</li>
 		<a href="damsook.html"><li id="home">HOME</li></a>
 		<a href="damsook_sns.html"><li id="SNS">SNS</li></a>
 		<li id="디저트">디저트</li>
 		<li id="커피음료">커피/음료</li>
-		<li id="회사소개">회사소개</li>
 		<a href="damsook_문의내역.html"><li id="문의하기">문의하기</li></a>
 	</ul>
 </nav>
 <section>
-		<div id="sec">주문 / 배송</div>
+	<div id="sec">문의 작성</div>
 		<div id="sec1">
-			<div id="sec_num">
-				<ul>
-					<li class="num">1</li>
-					<li class="num">0</li>
-					<li class="num">0</li>
-					<li class="num">0</li>
-					<li class="num">1</li>
-				</ul>
-			</div>
-			<div id="sec_text">
-				<li class="text">전체</li>
-				<li class="text">입금/결제</li>
-				<li class="text">배송중</li>
-				<li class="text">배송완료</li>
-				<li class="text">구매확정</li>
-			</div>
+			<div id="sec_title">제목</div>
+			<input id="text1" type="text" placeholder="제목을 입력해주세요."><br>
+			<input id="text2" type="text" placeholder="문의하실 내용을 입력해주세요">
 		</div>
-		<table>
-			<th>주문일</th><th>주문번호</th><th>주문금액</th><th>결제상태</th><th>배송상태</th><th>리뷰작성</th><th>적립금</th>
-				<tr>
-					<td>2023/5/25</td><td>23052510</td><td>23,000원</td><td>결제완료</td><td>배송완료</td><td><a href="damsook_리뷰.html">리뷰작성가능</a></td><td>230원</td>
-				</tr>
-				<tr>
-					<td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td>
-				</tr>
-				<tr>
-					<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-				</tr>
-				<tr>
-					<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-				</tr>
-				</table>
 
-
+<div id="sec2">
+		<form action="damsook_문의내역.html">
+			<input type="file">
+		<button id="form_button2" type="submit">작성 완료</button>
+		<button id="form_button3" type="reset">작성 초기화</button>
+	</form>
+</div>
 	
 </section>
 	</div>
@@ -249,7 +262,7 @@ margin:0px auto;}
 		<li id="lifoot">법인명_담숙하다 / 대표자_정에스더</li>
 		<li id="lifoot">사업자등록번호_794-23-01476 / 통신판매업 신고_2022-충남천안-1415</li>
 		<li id="lifoot">대표전화_070-0000-0000</li>
-		<li id="lifoot">주소_충청남도 천안시 서북구 봉서산1길 39 플러핀</li>
+		<li id="lifoot">주소_충청남도 천안시 서북구 봉서산1길 39</li>
 		<li id="lifoot">개인정보관리책임자_정에스더</li>
 	</ul>
 </footer>

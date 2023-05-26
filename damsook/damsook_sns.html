@@ -61,7 +61,7 @@ nav {	text-align: center;
 		margin:0 auto;
 	border: solid 0px blue;}
 
-#home {border-top: solid 1px gray;
+	#SNS {border-top: solid 1px gray;
 	border-left: solid 1px gray;
 	border-bottom: solid 1px gray;
 		width: 150px;
@@ -72,7 +72,7 @@ nav {	text-align: center;
 background-color: rgb(182, 182, 182);
 color: white;}
 
-#SNS, #디저트, #커피음료, #회사소개
+#home, #디저트, #커피음료, #회사소개
 	{border-top: solid 1px gray;
 	border-left: solid 1px gray;
 	border-bottom: solid 1px gray;
@@ -93,56 +93,59 @@ color: white;}
 	margin-top : 15px;
 	text-align: center;}
 	
-
 li {display: inline-block;
 list-style-type: none;}
 
 /*section*/
 section {text-align: center;
-		height: 380px;
+		height: 400px;
 		margin-top: 0px;
 		background-color: white;
 		margin:0 auto;
-		font-family: 'Noto Serif KR', serif;}
-#section {width: 600px;
-	margin:0 auto;}
-#sec {margin:0px auto;
-		padding-bottom: 15px;
-		border-bottom: solid 4px gray;
-		text-align: left;
-		width: 630px;
-	 	padding-top: 20px;}
+		font-family: 'Noto Serif KR', serif;
+	padding-top: 20px;}
+#section {width: 330px;
+		height: 200px;
+		margin:0px auto;
+	border: solid 0px blue;}
 
-th, tr, td, table {border-top:solid 1px black;
-	border-bottom:solid 1px black;
-	border-collapse: collapse;
-	padding: 5px;
-	margin: 20px auto;}
-
-td {width: 70px;
-	height: 20px;
-	font-size: small;}
-th {background-color: rgb(206, 206, 206);
-	color: white;
-	font-size: medium;
-	font-weight: bold;}
-
-#sec_title {width: 300px;}
-#button {width: 100px;
-		height: 30px;
-		padding-top: 5px;
-		border: solid 1px gray;
-		border-radius: 5px;
-		background-color: rgb(0, 153, 255);
-		color: white;
+#sec1 {width: 330px;
+		text-align: center;
 		margin:0 auto;
-	 	float: right;
 		font-size: small;}
 
+#sec2 {width: 150px;
+		height: 50px;
+		margin:10px auto;
+		float: left;
+		border-top: solid 4px gray;}
+#sec3 {width: 150px;
+		height: 50px;
+		margin: 10px auto;
+		float: right;
+		border-top: solid 4px rgb(189, 189, 189);}
+#sec_img1 {margin-top: 20px;}
+#sec_img2 {margin-top: 11px;}
 
-.clear	{clear: both;}
+#section2 {width: 330px;
+		height: 200px;
+		margin:190px auto;
+		border-top: solid 4px gray;
+		padding-top: 10px;}
 
-footer {padding-top: 45px;
+#sec4 {width: 150px;
+		height: 100px;
+		margin:10px auto;
+		float: left;}
+#sec5 {width: 150px;
+		height: 100px;
+		margin:10px auto;
+		float: right;}
+#sec_img3 {margin-top: 10px;
+			margin-bottom: 10px;}
+		/*footer*/
+	
+		footer {padding-top: 45px;
 	height: 160px;
 		margin-top: 0px;
 	background-image: url(img/돌담1.jpg);
@@ -187,7 +190,7 @@ margin:0px auto;}
 	<a href="damsook_마이페이지.html">
 	<li class="top"><img src="img/마이페이지.png" width="30">&nbsp;&nbsp;</li>
 	</a>
-	<a href="damsook_문의하기.html">
+	<a href="damsook_문의내역.html">
 	<li class="top"><img src="img/QnA.png" width="30">&nbsp;&nbsp;</li>
 	</a>
 </ul>
@@ -203,28 +206,34 @@ margin:0px auto;}
 		<li id="디저트">디저트</li>
 		<li id="커피음료">커피/음료</li>
 		<li id="회사소개">회사소개</li>
-		<a href="damsook_문의하기.html"><li id="문의하기">문의하기</li></a>
+		<a href="damsook_문의내역.html"><li id="문의하기">문의하기</li></a>
 	</ul>
 </nav>
 <section>
-	<div id="section">
-	<div id="sec">문의내역</div>
-	<table>
-		<th>번호</th><th id="sec_title">제목</th><th>작성자</th><th>답변상태</th><th>작성일</th>
-			<tr>
-				<td>3</td><td>...</td><td>...</td><td>답변완료</td><td>...</td>
-			</tr>
-			<tr>
-				<td>2</td><td>...</td><td>...</td><td>답변완료</td><td>...</td>
-			</tr>
-			<tr>
-				<td>1</td><td>...</td><td>...</td><td>답변완료</td><td>...</td>
-			</tr>
-			</table>
-<div id="button">
-	문의하기
-</div>
+ <div id="section">
+	<div id="sec1">담숙하다의 자세한 소식은 인스타그램을 참고해주세요.</div>
+		<div id="sec2">인스타그램<br>바로가기
+			<div id="sec_img1"><a href="https://www.instagram.com/fluffy__in"><img src="img/인스타그램_아이콘.png" width="60px"></a></div>
+ 		</div>
+		 <div id="sec3">네이버 예약하기<br>바로가기
+			<div id="sec_img2"><a href="https://www.naver.com/"><img src="img/naver.png" width="76px"></a></div>
+ 		</div>
+		 <div class='clear'></div>
+	<div id="section2">
+		- 단체 주문 상담 바로가기 -
+		<div id="sec4">
+			<div id="sec_img3"><a href="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=KOR"><img src="img/kakao.png" width="60"></a></div>
+			 카카오톡 상담하기
+		</div>
+		<div id="sec5">
+			<div id="sec_img4"><a href="https://www.naver.com/"><img src="img/naver_talk.png" width="80"></a></div>
+			네이버톡톡 상담하기
+		</div>
+		</div>
 	</div>
+
+
+
 </section>
 	</div>
 <div class='clear'></div>
