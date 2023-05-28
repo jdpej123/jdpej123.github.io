@@ -52,6 +52,12 @@ margin-left: 80px;
 height: 1px;}
 
 /*nav*/
+a:link { color: black;
+		text-decoration: none;}
+a:visited {  color: black}
+a:hover { color: gray; }
+a:active { color: black; }
+
 nav {	text-align: center;
 		height: 53px;
 		width: 930px;
@@ -72,6 +78,7 @@ nav {	text-align: center;
 background-color: rgb(182, 182, 182);
 color: white;}
 
+
 #home, #디저트, #커피음료, #회사소개
 	{border-top: solid 1px gray;
 	border-left: solid 1px gray;
@@ -80,14 +87,16 @@ color: white;}
 		height: 35px;
 	text-align: center;
 	margin: 0px auto;
-	padding-top: 15px;}
+	padding-top: 15px;
+	background-color: rgb(226, 226, 226);}
 #문의하기
 {border: solid 1px gray;
 		width: 152px;
 		height: 35px;
 	text-align: center;
 	margin: 0px auto;
-	padding-top: 15px;}
+	padding-top: 15px;
+	background-color: rgb(226, 226, 226);}
 
 .nav {margin-left: 90px;
 	margin-top : 15px;
@@ -95,8 +104,10 @@ color: white;}
 	
 li {display: inline-block;
 list-style-type: none;}
+li:hover {filter: brightness(0.7);}
 
 /*section*/
+
 section {text-align: center;
 		height: 400px;
 		margin-top: 0px;
@@ -126,6 +137,11 @@ section {text-align: center;
 		border-top: solid 4px rgb(189, 189, 189);}
 #sec_img1 {margin-top: 20px;}
 #sec_img2 {margin-top: 11px;}
+
+#sec_img1:hover {filter: brightness(0.5);}
+#sec_img2:hover {filter: brightness(0.5);}
+#sec_img3:hover {filter: brightness(0.5);}
+#sec_img4:hover {filter: brightness(0.5);}
 
 #section2 {width: 330px;
 		height: 200px;
@@ -203,9 +219,9 @@ margin:0px auto;}
 	<ul id="nav">
 		<a href="damsook.html"><li id="home">HOME</li></a>
 		<a href="damsook_sns.html"><li id="SNS">SNS</li></a>
-		<li id="디저트">디저트</li>
-		<li id="커피음료">커피/음료</li>
-		<li id="회사소개">회사소개</li>
+		<a href="damsook_디저트.html"><li id="디저트">디저트</li></a>
+		<a href="damsook_커피음료.html"><li id="커피음료">커피/음료</li></a>
+		<a href="damsook_회사소개.html"><li id="회사소개">회사소개</li></a>
 		<a href="damsook_문의내역.html"><li id="문의하기">문의하기</li></a>
 	</ul>
 </nav>

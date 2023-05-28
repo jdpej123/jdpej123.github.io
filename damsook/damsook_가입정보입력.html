@@ -50,6 +50,11 @@ height: 1px;}
 
 
 /*nav*/
+
+a:link { color: black}
+a:visited {  color: black}
+a:hover { color: gray; }
+a:active { color: black; }
 nav {	text-align: center;
 		height: 53px;
 		width: 930px;
@@ -57,7 +62,7 @@ nav {	text-align: center;
         font-family: 'Noto Serif KR', serif;
 		background-color: rgb(226, 226, 226);
 		margin:0 auto;
-	border: solid 1px blue;}
+	border: solid 0px blue;}
 
 #home {border-top: solid 1px gray;
 	border-left: solid 1px gray;
@@ -67,8 +72,7 @@ nav {	text-align: center;
 	text-align: center;
 	margin: 0px auto;
 	padding-top: 15px;
-background-color: rgb(182, 182, 182);
-color: white;}
+	background-color: rgb(226, 226, 226);}
 
 #SNS, #디저트, #커피음료, #회사소개
 	{border-top: solid 1px gray;
@@ -78,14 +82,16 @@ color: white;}
 		height: 35px;
 	text-align: center;
 	margin: 0px auto;
-	padding-top: 15px;}
+	padding-top: 15px;
+	background-color: rgb(226, 226, 226);}
 #문의하기
 {border: solid 1px gray;
 		width: 152px;
 		height: 35px;
 	text-align: center;
 	margin: 0px auto;
-	padding-top: 15px;}
+	padding-top: 15px;
+	background-color: rgb(226, 226, 226);}
 
 .nav {margin-left: 90px;
 	margin-top : 15px;
@@ -93,7 +99,7 @@ color: white;}
 
 li {display: inline-block;
 list-style-type: none;}
-
+li:hover {filter: brightness(0.7);}
 
 /*section*/
 section {height: 900px;
@@ -104,8 +110,9 @@ section {height: 900px;
 
 #sec {border-top: solid 4px gray;
 width: 320px;
-height: 580px;
-margin:0 auto;}	
+height: 690px;
+margin:0 auto;
+border: solid 0px blue;}	
 
 .id {margin-top: 20px;
 	display: block;
@@ -133,7 +140,9 @@ margin-top: 2px;}
 button {font-family: 'Noto Serif KR', serif;
 	width: 90px;
 padding: 5px;
-margin-left: 10px;}
+margin-left: 10px;
+text-align: center;
+cursor: pointer;}
 
 .check {width: 20px;
 	margin: 7px;}
@@ -145,15 +154,20 @@ margin-left: 10px;}
 #sec_button {font-family: 'Noto Serif KR', serif;
     text-align: center;
 width: 300px;
-height: 30px;
-margin: 110px auto;
-border: solid 2px rgb(0, 112, 204);
+height: 40px;
+margin: 0px auto;
+margin-left: 10px;
+border: solid 0px rgb(0, 112, 204);
 border-radius: 7px;
 padding: 5px;
 color: white;
-background-color: rgb(0, 112, 204); }
-#완료 {color: white;}
-	
+background-color: rgb(0, 112, 204);
+cursor: pointer;}
+
+#sec_button:hover {filter: brightness(0.7);}
+a:link{text-decoration: none;}
+
+
 	/*footer*/
 footer {padding-top: 45px;
 	height: 160px;
@@ -210,11 +224,11 @@ margin:0px auto;}
 </header>
 <nav>
 	<ul id="nav">
-		<li id="회사소개">회사소개</li>
 		<a href="damsook.html"><li id="home">HOME</li></a>
 		<a href="damsook_sns.html"><li id="SNS">SNS</li></a>
-		<li id="디저트">디저트</li>
-		<li id="커피음료">커피/음료</li>
+		<a href="damsook_디저트.html"><li id="디저트">디저트</li></a>
+		<a href="damsook_커피음료.html"><li id="커피음료">커피/음료</li></a>
+		<a href="damsook_회사소개.html"><li id="회사소개">회사소개</li></a>
 		<a href="damsook_문의내역.html"><li id="문의하기">문의하기</li></a>
 	</ul>
 </nav>
@@ -226,7 +240,7 @@ margin:0px auto;}
 		<li class="id">비밀번호<input type="password" placeholder="8~16자리 / 영문, 숫자, 특수문자 포함"></li>
 		<li class="id">이름<input type="text" placeholder="이름 입력"></li>
 		<li class="id">생년월일<input type="text" placeholder="YYYYMMDD"></li>
-		<li class="id">휴대폰<br><input id="input_id" type="text" placeholder="'-'빼고 숫자만 입력'"><button onclick="alert('인증번호가 발송되었습니다.')" type="button">인증요청</button></li>
+		<li class="id">휴대폰<br><input id="input_id" type="number" placeholder="'-'빼고 숫자만 입력'"><button id="button" onclick="alert('인증이 완료되었습니다.')" type="button">인증요청</button></li>
 		<li class="id">이메일<input type="text" placeholder="email@damsook.com"></li>
 		<li class="id">약관
 			<div id="id1">
@@ -237,14 +251,14 @@ margin:0px auto;}
 				<li><input class="check" type="checkbox">(선택) 마케팅 정보 수신 동의 - 이메일<br></li>
 				<li><input class="check"  type="checkbox">(선택) 마케팅 정보 수신 동의 - SMS/MMS<br></li>
 			</div></li>
-		</ul>		
+		</form>
+		</ul>
+		<a href="damsook_가입완료.html">
+			<button id="sec_button">
+				회원가입 완료
+			</button></a>		
 	</div>
-</form>
-<div class='clear'></div>
-<a href="damsook_가입완료.html">
-	<div id="sec_button"><span id="완료">
-회원가입 완료</span>
-</div></a>
+
 </section>
 	</div>
 <div class='clear'></div>

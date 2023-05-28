@@ -52,6 +52,10 @@ margin-left: 80px;
 height: 1px;}
 
 /*nav*/
+a:link { color: black}
+a:visited {  color: black}
+a:hover { color: gray; }
+a:active { color: black; }
 nav {	text-align: center;
 		height: 53px;
 		width: 930px;
@@ -69,7 +73,8 @@ nav {	text-align: center;
 	text-align: center;
 	margin: 0px auto;
 	padding-top: 15px;
-	color: black;}
+	color: black;
+	background-color: rgb(226, 226, 226);}
 
 #SNS, #디저트, #커피음료, #회사소개
 	{border-top: solid 1px gray;
@@ -80,7 +85,8 @@ nav {	text-align: center;
 	text-align: center;
 	margin: 0px auto;
 	padding-top: 15px;
-	color: black;}
+	color: black;
+	background-color: rgb(226, 226, 226);}
 #문의하기
 {border: solid 1px gray;
 		width: 152px;
@@ -97,7 +103,7 @@ nav {	text-align: center;
 
 li {display: inline-block;
 list-style-type: none;}
-
+li:hover {filter: brightness(0.7);}
 
  /*section*/
 
@@ -130,16 +136,17 @@ height: 25px;
 margin: 5px;}
 #text2 {width: 600px;
 		height: 100px;
-		margin-top: 30px;}
+		margin-bottom: 10px;}
 
 #sec2 {width: 630px;
 		height: 200px;
 	margin: 0 auto;
-	border: solid 1px blue;
+	border: solid 0px blue;
 }
-form {margin: 0 auto;
+form {margin: 10px auto;
 	text-align: center;
-width: 600px;}
+width: 600px;
+border: solid 0 blue;}
 
 #form_text {width: 600px;
 		height: 150px;
@@ -148,19 +155,23 @@ width: 600px;}
 	border-radius: 5px
 	font-family: 'Noto Serif KR', serif;}
 
-
+#file {border: solid 1px gray;
+		border-radius: 5px;
+		width: 600px;}
 #form_button1 {float: left;
 				width: 100px;
 				height: 30px;
 				border-radius: 5px;
 				font-family: 'Noto Serif KR', serif;
-			border: solid 1px gray;}
+			border: solid 1px gray;
+			margin-top: 20px;}
 #form_button3 {float: right;
 				width: 100px;
 				height: 30px;
 				border-radius: 5px;
 				font-family: 'Noto Serif KR', serif;
-			border: solid 1px gray;}
+			border: solid 1px gray;
+			margin-top: 20px;}
 #form_button2 {float: right;
 				width: 100px;
 				height: 30px;
@@ -169,8 +180,9 @@ width: 600px;}
 				border-radius: 5px;
 				color: white;
 				font-family: 'Noto Serif KR', serif;
-				margin-left: 5px;}
-
+				margin-left: 5px;
+				margin-top: 20px;}
+button:hover {filter: brightness(0.7);}
 .clear	{clear: both;}
 
 /*footer*/
@@ -230,11 +242,11 @@ margin:0px auto;}
 </header>
 <nav>
 	<ul id="nav">
-		<li id="회사소개">회사소개</li>
 		<a href="damsook.html"><li id="home">HOME</li></a>
 		<a href="damsook_sns.html"><li id="SNS">SNS</li></a>
-		<li id="디저트">디저트</li>
-		<li id="커피음료">커피/음료</li>
+		<a href="damsook_디저트.html"><li id="디저트">디저트</li></a>
+		<a href="damsook_커피음료.html"><li id="커피음료">커피/음료</li></a>
+		<a href="damsook_회사소개.html"><li id="회사소개">회사소개</li></a>
 		<a href="damsook_문의내역.html"><li id="문의하기">문의하기</li></a>
 	</ul>
 </nav>
@@ -243,12 +255,12 @@ margin:0px auto;}
 		<div id="sec1">
 			<div id="sec_title">제목</div>
 			<input id="text1" type="text" placeholder="제목을 입력해주세요."><br>
-			<input id="text2" type="text" placeholder="문의하실 내용을 입력해주세요">
 		</div>
-
 <div id="sec2">
-		<form action="damsook_문의내역.html">
-			<input type="file">
+	<form action="damsook_문의내역.html">
+		<input id="text2" type="text" placeholder="문의하실 내용을 입력해주세요">
+			<input id="file" type="file">
+			<button id="form_button1">뒤로 가기</button>
 		<button id="form_button2" type="submit">작성 완료</button>
 		<button id="form_button3" type="reset">작성 초기화</button>
 	</form>
