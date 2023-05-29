@@ -4,66 +4,61 @@
     <head>
         <meta charset="uft-8">
         <style>
+ @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300&display=swap');
+ 
+ body {background-color: rgb(255, 228, 233);
+                    text-align: center;
+    font-family: 'Gaegu', cursive;
+                }
+
             table, th, tr, td {
                 border: solid 1px black;
                 border-collapse: collapse;
                 padding: 8px;
-				margin: 20px;
-            }
-            td {width: 100px;
-            height: 30px;}
-            div {width: 500px;
-                height: 80px;
-                color: black;
-            border: solid 1px gray;}
+				margin: 20px;}
             
-			#green {border-left: solid 10px green;
-            height: 25px;
-            padding-left: 10px;
-                margin: 20px;}
-			#purple {border-left: solid 10px purple;
-            height: 25px;
-            padding-left: 10px;
-                margin: 20px;}
-			#red {border-left: solid 10px red;
-            height: 25px;
-            padding-left: 10px;
-                margin: 20px;}
-			#orange {border-left: solid 10px orange;
-            height: 25px;
-            padding-left: 10px;
-                margin: 20px;}
-			#navy {border-left: solid 10px navy;
-            height: 25px;
-            padding-left: 10px;
-                margin: 20px;}
-			#yellow {border-left: solid 10px yellow;
-            height: 25px;
-            padding-left: 10px;
-                margin: 20px;}
-            #pink {border-left: solid 10px pink;
-            height: 25px;
-            padding-left: 10px;
-                margin: 20px;}
-            
-            #blue {border-left: solid 10px blue;
-            height: 25px;
-            padding-left: 10px;
-                margin: 20px;}
-            
-            #pink2 {border-left: solid 10px  rgb(255, 151, 168);
-            height: 25px;
-            padding-left: 10px;
-                margin: 20px;}
-            
-			table {text-align: center;}
+			table {text-align: center;
+                    width: 500px;}
+nav li {list-style-type: none;
+        display: inline;
+        font-weight: bold;
+        margin: 0 auto;
+        width: 1140px;
+        padding: 5px;}
+
+a:link {color: palevioletred;
+        text-decoration: none;}
+a:visited {  color: palevioletred}
+a:hover { color: rgb(189, 39, 89); }
+a:active { color: red; }
+
+header {width: 100%;
+        height: 150px;}
+header h3 {padding-top: 60px;}
             </style>
     </head>
     <body>
+        <header>
         <h3>
-            환영합니다! 20200399 정에스더의 홈페이지입니다.
+            ESTHER's Brain
         </h3>
-        <div id="green">시간표</div>
+        </header>
+        <nav>
+            <div id="nav">
+            <ul style="overflow: hidden;">
+                <a href="회원가입.html"><li>회원가입&nbspㅣ</li></a>
+                <a href="rubato.html"><li>루바토 펜션 안내&nbspㅣ</li></a>
+                <a href="호서국제기타페스티벌.html"><li>호서 국제 기타 페스티벌&nbspㅣ</li></a>
+                <a href="호서야간개장.html"><li>주말 야간개장 안내&nbspㅣ</li></a>
+                <a href="세일 안내장.html"><li>세일 안내장&nbspㅣ</li></a>
+                <a href="월간일정표.html"><li>월간 일정표&nbspㅣ</li></a>
+                <a href="판매목록.html"><li>판매 제품 목록</li></a>
+            </ul>
+            </div>
+        </nav>
+
+        <div>시간표
 <table>
 	<tr>
 		<th>시간표</th><th>월요일</th><th>화요일</th><th>수요일</th><th>목요일</th><th>금요일</th>
@@ -105,13 +100,6 @@
 		<th>12교시</th><td></td><td></td><td>데이터베이스설계및개발</td><td></td><td>웹프로그래밍</td>
 	</tr>
 </table>
-<a href="회원가입.html"><div id="navy">회원가입</div></a>
-<a href="rubato.html"><div id="purple">루바토 펜션 안내</div></a>
-<a href="호서국제기타페스티벌.html"><div id="red">호서 국제 기타 페스티벌</div></a>
-<a href="호서야간개장.html"><div id="orange">주말 야간 개장 안내</div></a>
-<a href="세일 안내장.html"><div id="yellow">세일 안내장</div></a>
-<a href="월간일정표.html"><div id="pink">월간 일정표</div></a>
-<a href="판매목록.html"><div id="blue">판매 제품 목록</div></a>
-<a href="홈페이지.html"><div id="pink2">플러핀 홈페이지</div></a>
+        </div>
 </body>
 </html>
