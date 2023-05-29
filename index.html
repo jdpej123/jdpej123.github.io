@@ -17,9 +17,20 @@
                 border-collapse: collapse;
                 padding: 8px;
 				margin: 20px;}
-            
-			table {text-align: center;
+            table {background-color: white;
+                text-align: center;
                     width: 500px;}
+            .white {background-color: rgb(231, 231, 231);}
+            .green {background-color: rgb(248, 255, 228);}
+            .blue {background-color: rgb(217, 246, 255);}
+            .pink {background-color: rgb(255, 224, 229);}
+            #yellow {background-color: lightgoldenrodyellow;}
+            
+            th {width: 30px;}
+
+nav {border-bottom: solid 2px palevioletred;
+    border-top: solid 2px palevioletred;
+    width: 100%;}                    
 nav li {list-style-type: none;
         display: inline;
         font-weight: bold;
@@ -33,9 +44,20 @@ a:visited {  color: palevioletred}
 a:hover { color: rgb(189, 39, 89); }
 a:active { color: red; }
 
+section {border: solid 2px palevioletred;
+        width: 570px;
+        margin: 20px;
+        float: left;
+        background-color: rgb(255, 209, 217);
+        border-radius: 5px;}
+#sec_box {
+            width: 570px;
+        text-align: center;}
+
 header {width: 100%;
         height: 150px;}
-header h3 {padding-top: 60px;}
+header h3 {padding-top: 60px;
+            font-size: 50px;}
             </style>
     </head>
     <body>
@@ -57,8 +79,9 @@ header h3 {padding-top: 60px;}
             </ul>
             </div>
         </nav>
-
-        <div>시간표
+<div id="sec_box">
+<section>
+<h2>2023/1학기 시간표</h2>
 <table>
 	<tr>
 		<th>시간표</th><th>월요일</th><th>화요일</th><th>수요일</th><th>목요일</th><th>금요일</th>
@@ -67,19 +90,19 @@ header h3 {padding-top: 60px;}
 		<th>1교시</th><td></td><td></td><td></td><td></td><td></td>
 	</tr>
 	<tr>
-		<th>2교시</th><td></td><td></td><td>경영통계</td><td></td><td rowspan="2">웹프로그래밍</td>
+		<th>2교시</th><td></td><td></td><td class="white">경영통계</td><td></td><td class="pink" rowspan="2">웹프로그래밍</td>
 	</tr>
 	<tr>
-		<th>3교시</th><td></td><td></td><td rowspan="2">경영정보시스템</td><td></td>
+		<th>3교시</th><td></td><td></td><td class="green" rowspan="2">경영정보시스템</td><td></td>
 	</tr>
     <tr>
 		<th>4교시</th><td></td><td></td><td></td><td></td>
 	</tr>
     <tr>
-		<th>5교시</th><td>경영정보시스템</td><td></td><td></td><td></td><td rowspan="2">경영통계</td>
+		<th>5교시</th><td class="green">경영정보시스템</td><td></td><td></td><td></td><td class="white" rowspan="2">경영통계</td>
 	</tr>
     <tr>
-		<th>6교시</th><td></td><td></td><td rowspan="2">데이터베이스설계및개발</td><td></td>
+		<th>6교시</th><td></td><td></td><td class="blue" rowspan="2">데이터베이스설계및개발</td><td></td>
 	</tr>
     <tr>
 		<th>7교시</th><td></td><td></td><td></td><td></td>
@@ -88,7 +111,7 @@ header h3 {padding-top: 60px;}
 		<th>8교시</th><td></td><td></td><td></td><td></td><td></td>
 	</tr>	
     <tr>
-		<th>9교시</th><td></td><td></td><td></td><td></td><td rowspan="2">인문학과명화속성이야기</td>
+		<th>9교시</th><td></td><td></td><td></td><td></td><td id="yellow" rowspan="2">인문학과명화속성이야기</td>
 	</tr>	
     <tr>
 		<th>10교시</th><td></td><td></td><td></td><td></td>
@@ -97,9 +120,16 @@ header h3 {padding-top: 60px;}
 		<th>11교시</th><td></td><td></td><td></td><td></td><td></td>
 	</tr>	
     <tr>
-		<th>12교시</th><td></td><td></td><td>데이터베이스설계및개발</td><td></td><td>웹프로그래밍</td>
+		<th>12교시</th><td></td><td></td><td class="blue">데이터베이스설계및개발</td><td></td><td class="pink">웹프로그래밍</td>
 	</tr>
 </table>
-        </div>
+</section>
+
+<aside>
+    <div id="animals">
+
+    </div>
+</aside>
+</div>
 </body>
 </html>
