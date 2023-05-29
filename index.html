@@ -45,23 +45,77 @@ a:hover { color: rgb(189, 39, 89); }
 a:active { color: red; }
 
 section {border: solid 2px palevioletred;
-        width: 570px;
         margin: 20px;
-        float: left;
         background-color: rgb(255, 209, 217);
+        border-radius: 5px;
+        float: left;}
+      
+
+#sec_box { width: 1000px;
+        text-align: center;
+        margin: 0 auto;
+        border: solid 0px gray;}
+
+#clear {clear: both;}
+/*aside*/
+#aside {float: right;
+        background-color: rgb(255, 209, 217);
+        width: 330px;
+        height: 360px;
+        margin: 20px;
+        border: solid 2px palevioletred;
         border-radius: 5px;}
-#sec_box {
-            width: 570px;
-        text-align: center;}
+#aside img {margin-top: 10px;
+            margin-bottom: 10px;}
+aside img:hover {filter: brightness(0.9);}
+#aside2 {float: right;
+        background-color: rgb(255, 209, 217);
+        width: 330px;
+        height: 360px;
+        margin: 20px;
+        border: solid 2px palevioletred;
+        border-radius: 5px;
+        font-size: x-large;
+        color: palevioletred;}
+#aside2 img {margin-top: 10px;
+            margin-bottom: 10px;}
+#aside3 {float: left;
+        background-color: rgb(255, 209, 217);
+        width: 540px;
+        height: 390px;
+        margin: 20px;
+        border: solid 2px palevioletred;
+        border-radius: 5px;
+        font-size: large;}
+#aside3 iframe {margin-top: 10px;
+                margin-bottom: 10px;}
+
+
 
 header {width: 100%;
-        height: 150px;}
-header h3 {padding-top: 60px;
-            font-size: 50px;}
+        height: 250px;}
+header h3 {padding-top: 0px;
+            font-size: 50px;
+            color: palevioletred;
+           border: solid 3px rgb(167, 79, 108);
+            border-radius: 60px;
+            width: 500px;
+            margin: 0 auto;
+            background-color: palevioletred;
+            color: white ;}
+
+header img {margin-top: 20px;}
+
+
+
+footer {width: 100%;
+        height: 60px;
+        border: solid 0px palevioletred;}
             </style>
     </head>
     <body>
         <header>
+            <img src="brain.png" width="100">
         <h3>
             ESTHER's Brain
         </h3>
@@ -75,7 +129,8 @@ header h3 {padding-top: 60px;
                 <a href="호서야간개장.html"><li>주말 야간개장 안내&nbspㅣ</li></a>
                 <a href="세일 안내장.html"><li>세일 안내장&nbspㅣ</li></a>
                 <a href="월간일정표.html"><li>월간 일정표&nbspㅣ</li></a>
-                <a href="판매목록.html"><li>판매 제품 목록</li></a>
+                <a href="판매목록.html"><li>판매 제품 목록 ㅣ</li></a>
+                <a href="photo-academy.html"><li>포토 아카데미</li></a>
             </ul>
             </div>
         </nav>
@@ -126,10 +181,33 @@ header h3 {padding-top: 60px;
 </section>
 
 <aside>
-    <div id="animals">
+    <div id="aside">
+<img src="animal/cuti1.jpeg" width="300"><br>
+애옹
+    </div>
 
+    <div id="aside2">
+        <a href="홈페이지.html"><img src="damsook/img/플러핀 투명 배경.png" width="220"></a><br>
+
+        플러핀 홈페이지
+    </div>
+
+    <div id="aside3">
+        <iframe width="500" height="330"
+        src="https://www.youtube.com/embed/ql-o3FCJz6Q" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br> 심신안정
     </div>
 </aside>
 </div>
+<div id="clear">
+</div>
+<footer>
+    @copyright 정에스더<br>
+    호서대학교 경영대학 디지털기술경영학과 2023년도 1학기 웹프로그래밍 실습
+
+</footer>
+
+
 </body>
 </html>
