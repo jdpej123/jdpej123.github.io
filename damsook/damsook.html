@@ -14,7 +14,7 @@ header, nav, section, aside, footer {border: solid 0px red;}
 		margin:0px auto;}
 
 		/*header*/
-header {width: 1100;
+		header {width: 1100px;
 		height: 210px;
 		margin:0 auto;}
 
@@ -28,13 +28,14 @@ header {width: 1100;
 h2 {font-family: 'Noto Serif KR', serif;
     font-size: 30px;
     float: left;
+
     text-align: center;
     text-shadow: 2px 2px 5px gray;
     width: 150px;
     height: 50px;
 margin-top: 40px;
 margin-left: 350px;
-border: solid 1px blue;}
+border: solid 0px blue;}
 
 #ultop {margin-left: 10px;
 	float: right;}
@@ -58,6 +59,7 @@ a:link { color: black;
 a:visited {  color: black}
 a:hover { color: gray; }
 a:active { color: black; }
+
 nav {	text-align: center;
 		height: 53px;
 		width: 930px;
@@ -67,7 +69,7 @@ nav {	text-align: center;
 		margin:0 auto;
 	border: solid 0px blue;}
 
-#home {border-top: solid 1px gray;
+	#SNS {border-top: solid 1px gray;
 	border-left: solid 1px gray;
 	border-bottom: solid 1px gray;
 		width: 150px;
@@ -78,7 +80,8 @@ nav {	text-align: center;
 background-color: rgb(182, 182, 182);
 color: white;}
 
-#SNS, #디저트, #커피음료, #회사소개
+
+#home, #디저트, #커피음료, #회사소개
 	{border-top: solid 1px gray;
 	border-left: solid 1px gray;
 	border-bottom: solid 1px gray;
@@ -100,11 +103,9 @@ color: white;}
 .nav {margin-left: 90px;
 	margin-top : 15px;
 	text-align: center;}
-
-	li {display: inline-block;
-list-style-type: none;
-text-align: center;
-cursor : pointer;}
+	
+li {display: inline-block;
+list-style-type: none;}
 li:hover {filter: brightness(0.7);}
 
 /*section*/
@@ -175,11 +176,10 @@ margin-left: 25px;}
 .clear	{clear: both;}
 
 /*footer*/
-footer {
+footer {background-color: white;
 margin: 0 auto;
 	text-align: center;
     color: black;
-
     margin:0px auto;
 	padding: 5px;
     font-family: 'Noto Serif KR', serif;
@@ -193,44 +193,45 @@ margin: 0 auto;
 </head>
 <body>
 	<div id="background">
-<header>
-	<a href="damsook.html"><img id="logo" src="img/logo.png" width="100"></a>
-<h2 id="name">
-	담숙하다
-</h2>
-<div id="top">
-<ul id="ultop">
-	<a href="damsook_회원가입.html">
-		<li class="top"><img src="img/회원가입.png" width="30">&nbsp;&nbsp;</li>
-	</a>
-	<a href="damsook_장바구니.html">
-		<li class="top"><img src="img/장바구니.png" width="30">&nbsp;&nbsp;</li>
-	</a>
-	<a href="damsook_주문배송.html">
-	<li class="top"><img src="img/주문배송.png" width="30">&nbsp;&nbsp;</li>
-	</a>
-	<a href="damsook_마이페이지.html">
-	<li class="top"><img src="img/마이페이지.png" width="30">&nbsp;&nbsp;</li>
-	</a>
-	<a href="damsook_문의내역.html">
-	<li class="top"><img src="img/QnA.png" width="30">&nbsp;&nbsp;</li>
-	</a>
-</ul>
-</div>
-<div id="top2">
-회원가입 ㅣ 장바구니 ㅣ 주문/배송 ㅣ 마이페이지 ㅣ QnA
-</div>
-</header>
-<nav>
-	<ul id="nav">
-		<a href="damsook.html"><li id="home">HOME</li></a>
-		<a href="damsook_sns.html"><li id="SNS">SNS</li></a>
-		<a href="damsook_디저트.html"><li id="디저트">디저트</li></a>
-		<a href="damsook_커피음료.html"><li id="커피음료">커피/음료</li></a>
-		<a href="damsook_회사소개.html"><li id="회사소개">회사소개</li></a>
-		<a href="damsook_문의내역.html"><li id="문의하기">문의하기</li></a>
-	</ul>
-</nav>
+		<header>
+			<a href="damsook.html"><img id="logo" src="img/logo.png" width="100"></a>
+		
+		<h2>
+			담숙하다
+		</h2>
+		<div id="top">
+		<ul id="ultop">
+			<a href="damsook_회원가입.html">
+				<li class="top"><img src="img/회원가입.png" width="30">&nbsp;&nbsp;</li>
+			</a>
+			<a href="damsook_장바구니.html">
+				<li class="top"><img src="img/장바구니.png" width="30">&nbsp;&nbsp;</li>
+			</a>
+			<a href="damsook_주문배송.html">
+			<li class="top"><img src="img/주문배송.png" width="30">&nbsp;&nbsp;</li>
+			</a>
+			<a href="damsook_마이페이지.html">
+			<li class="top"><img src="img/마이페이지.png" width="30">&nbsp;&nbsp;</li>
+			</a>
+			<a href="damsook_문의내역.html">
+			<li class="top"><img src="img/QnA.png" width="30">&nbsp;&nbsp;</li>
+			</a>
+		</ul>
+		</div>
+		<div id="top2">
+		회원가입 ㅣ 장바구니 ㅣ 주문/배송 ㅣ 마이페이지 ㅣ QnA
+		</div>
+		</header>
+		<nav>
+			<ul id="nav">
+				<a href="damsook.html"><li id="home">HOME</li></a>
+				<a href="damsook_sns.html"><li id="SNS">SNS</li></a>
+				<a href="damsook_디저트.html"><li id="디저트">디저트</li></a>
+				<a href="damsook_커피음료.html"><li id="커피음료">커피/음료</li></a>
+				<a href="damsook_회사소개.html"><li id="회사소개">회사소개</li></a>
+				<a href="damsook_문의내역.html"><li id="문의하기">문의하기</li></a>
+			</ul>
+		</nav>
 <div id="section">
 <section>
 <div id="sec1">BEST PRODUCT</div>
