@@ -69,7 +69,7 @@ nav {	text-align: center;
 		margin:0 auto;
 	border: solid 0px blue;}
 
-#home {border-top: solid 1px gray;
+#회사소개 {border-top: solid 1px gray;
 	border-left: solid 1px gray;
 	border-bottom: solid 1px gray;
 		width: 150px;
@@ -77,9 +77,10 @@ nav {	text-align: center;
 	text-align: center;
 	margin: 0px auto;
 	padding-top: 15px;
-	background-color: rgb(226, 226, 226);}
+	background-color: rgb(182, 182, 182);
+	color: white;}
 
-#SNS, #디저트, #커피음료, #회사소개
+#SNS, #디저트, #커피음료, #home
 	{border-top: solid 1px gray;
 	border-left: solid 1px gray;
 	border-bottom: solid 1px gray;
@@ -108,70 +109,44 @@ li:hover {filter: brightness(0.7);}
 
 
 /*sec*/
-#id {margin:0px auto;
-	border-top: solid 4px gray;
-	width: 300px;
-	text-align: left;
-}
-
-.id {
-	display: block;
-	font-family: 'Noto Serif KR', serif;
-	color: black;
-	margin:20px auto;}
-
-input {text-align: left;
-	font-family: 'Noto Serif KR', serif;
-	width: 300px;
-	padding: 5px;
-margin-top: 2px;}
-
-section {text-align: center;
-		height: 430px;
-		margin-top: 0px;
+section {width: 100%;
+		height: 1000px;
 		background-color: white;
-		margin:0 auto;
-	padding-top: 20px;}
-#sec1 {font-family: 'Noto Serif KR', serif;
-		margin:20px auto;
-		border-top: solid 4px gray;
 		text-align: center;
-		width: 300px;
-	 	padding-top: 20px;}
+		font-family: 'Noto Serif KR', serif;
+		padding-top: 30px;}
 
+#section {font-weight: bold;
+			border: solid 3px gray;
+			width: 300px;
+			height: 50px;
+			border-radius: 50px;
+			margin: 0 auto;
+			padding-top: 15px;
+			margin-bottom: 20px;
+			background-color: lightgray;
+			font-size: larger;}
+section img {margin: 20px auto;}
+#text {margin-top: 20px;}
+#sec_text1 {font-size: larger;
+			font-weight: bold;}
 
-
-#sec3 {font-family: 'Noto Serif KR', serif;
-    text-align: center;
-width: 300px;
-margin-left: 420px;
-margin-top: 20px;
-margin:20px auto;}
-
-#sec4 {font-family: 'Noto Serif KR', serif;
-    text-align: center;
-width: 300px;
-margin-left: 435px;
-margin:10px auto;
-cursor : pointer;}
-.sec4 {padding-left: 13px;}
-
-#sec5 {font-family: 'Noto Serif KR', serif;
-   	 	text-align: center;
-		width: 300px;
-		height: 40px;
-		margin:0px auto;
-		margin-left: 10px;
-		border: solid 2px rgb(0, 153, 255);
-		border-radius: 7px;
-		color: white;
-		background-color: rgb(0, 153, 255);
-		cursor : pointer;}
-
-
+#sec2 {width: 400px;
+		margin: 50px auto;
+		padding-top: 20px;
+		text-align: center;}
+#sec2_text {font-weight: bold;
+			border: solid 3px gray;
+			width: 300px;
+			height: 50px;
+			border-radius: 50px;
+			margin: 0 auto;
+			padding-top: 15px;
+			background-color: lightgray;}
 
 .clear	{clear: both;}
 
+/*footer*/
 footer {background-color: white;
 margin: 0 auto;
 	text-align: center;
@@ -182,21 +157,6 @@ margin: 0 auto;
     font-size: xx-small;
 	opacity: 0.9;}
 
-	#foot {
-	text-align: center;
-    color: black;
-    background-color: white;
-    width: 900px;
-	height: 100px;
-    margin:0px auto;
-	padding: 5px;
-    font-family: 'Noto Serif KR', serif;
-    font-size: small;
-	opacity: 0.9;}
-
-.lifoot {margin: 0 auto;
-	text-align: center;
-	display: block;}
 </style>
 </head>
 <body>
@@ -227,7 +187,7 @@ margin: 0 auto;
 </ul>
 </div>
 <div id="top2">
-회원가입 ㅣ 장바구니 ㅣ 주문/배송 ㅣ 마이페이지 ㅣ QnA
+회원가입/로그인 ㅣ 장바구니 ㅣ 주문/배송 ㅣ 마이페이지 ㅣ QnA
 </div>
 </header>
 <nav>
@@ -242,8 +202,25 @@ margin: 0 auto;
 </nav>
 
 <section>
+<div id="section">
+	담숙하다의 의미
+</div>
+<div id="sec">
+	<img src="img/logo.png" width="300" title="담숙하다의 로고">
+</div>
+<div id="sec_text">
+	<span style="font-size: smaller;">ㄴ 담숙하다의 로고</span><br><br>
+	<span id="sec_text1">'(순우리말)담숙하다'는 포근하고 폭신하다는 의미입니다.</span><br><br>
+	<span id="text" style="font-size: small;">"좋은 재료와 정성으로 만든 폭신하고 포근한 디저트를 판매합니다."</span>
+</div>
+<div id="sec2">
+	<div id="sec2_text" style="font-size: larger;">담숙하다의 초기 브랜드</div><br><br>
+	플러핀<br>
+	Since 2022.6~<br>
+	<a href="홈페이지.html"><img src="img/플러핀 투명 배경.png" width="150" title="플러핀 홈페이지 바로가기"></a><br>
 	
 
+</div>
 
 </section>
 	</div>
